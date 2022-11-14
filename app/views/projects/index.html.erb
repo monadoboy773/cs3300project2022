@@ -3,12 +3,13 @@
 <head>
 <style>
 
+
 .list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   border: solid 1px black;
-  background: #DBD0CE;
+  background: #f1f1f1;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,7 +18,7 @@
 .list a {
   float: left;
   display: block;
-  color: #DBD0CE;
+  color: #f1f1f1;
   text-align: center;
   padding: 16px;
   text-decoration: none;
@@ -44,11 +45,90 @@
 </head>
 
 <body>
-    <ul class="list">
-        <li class="item"><a>Home</a></li>
-        <li class="item"><a>Sign Up/Sign In</a></li>
+    <nav class="navbar">
+        <ul class="list">
+            <li class="item"><a>Home</a></li>
+            <div class="dropdown">
+                <button class="dropdown-toggle">Account</button>
+                <div class="dropdown-content">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="#">Sign In</a></li>
+                </ul>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container-fluid bg-primary text-center">
+        <h1>My Portfolio</h1>
+        <h5> Jaylen McKinney </h5>
+    </div>
+
+    <h4>Degree: <a href="https://eas.uccs.edu/cs/academics/undergraduate-programs/bachelor-of-science-in-computer-science" target="_blank">Bachelor of Science in Computer Science</a> </h4>
+    <p>
+        I am a determined undergrad student currently working towards a B.S. in computer science. 
+        Always looking forward to developing my programming skills and working with others to tackle problems. 
+        Worked on several class projects that involved intense problem-solving and modularization.
+    </p>
+
+    <h5>Programming Languages</h5>
+    <ul>
+        <li>C++</li>
+        <li>C</li>
+        <li>Python</li>
+        <li>HTML</li>
     </ul>
-<p>Hello</p>
+
+    <h5>Skills</h5>
+    <ul>
+        <li>Software Engineering: User stories, unit testing, iterative development, Basic understanding of Docker</li>
+        <li>Concepts: Computer architecture, object-oriented programming, modularized coding, command shells</li>
+        <li>Personal Attributes: Determination, team player, problem solver</li>
+    </ul>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg">
+                <h5>Project 1: T-Shirt Fundraiser Simulation Program - August 2021 - December 2021</h5>
+                <p>
+                    • Created design documents to outline the different tasks and functions needed to make the code run.
+                    <br>
+                    • Built functions that would validate input, accept payment of the shirts, and calculate the percent of the funds raised that would go to theoretical charity.
+                    <br>
+                    • Modularized code into different functions to accomplish different tasks throughout the semester.
+                    <br>
+                    • Recorded a video describing the code and showing the tasks and pseudocode used for the project.
+                <p>
+            </div>
+
+            <div class="col-lg">
+                <h5>Project 2: Roman Numeral to Integer - Nov 2021</h5>
+                <ul>
+                    <li>Used classes to handle converting roman numeral to an integer.</li>
+                    <li>Created switch case statements to convert each roman numeral letter into an integer to add to total sum.</li>
+                	<li>Defined class member functions in a header file to improve reusability and readability.</li>
+                </ul>
+            </div>
+
+            <div class="col-lg">
+                <h5>Project 3: Project Assistant at UCCS Cybersecurity Programs Office - Colorado Springs, CO, Sept 2022 - Present</h5>
+                <p>
+                    • Searching databases to find grant ideas for UCCS.
+                	• Learning how to use Wix.com to manage school cybersecurity website.
+                	• Walked children through VR game to teach them more about cybersecurity.
+                
+                <p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
 </body>
 
 </html>
