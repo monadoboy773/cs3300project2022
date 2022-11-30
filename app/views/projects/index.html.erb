@@ -80,19 +80,20 @@
         <li>Personal Attributes: Determination, team player, problem solver</li>
     </ul>
 
-    <div>
-    <div id="projects">
-  <% @projects.each do |project| %>
-    <%= render project %>
-    <p>
-      <%= link_to "Show this project", project %>
-    </p>
-  <% end %>
-</div>
 
-<%= link_to "New project", new_project_path %>
-        <button onclick="window.location.href='/projects/new';">Create new project</button>
+    <div>
+        <%= link_to "New project", new_project_path %>
     </div>
+
+    <div id="projects">
+        <% @projects.each do |project| %>
+            <%= render project %>
+            <p>
+                <%= link_to "Show this project", project %>
+            </p>
+        <% end %>
+    </div>
+
 
     <div class="container">
         <div class="row">
